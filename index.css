@@ -183,7 +183,9 @@ a:hover{
 .price{
     color: green;
 }
+.galleryContainer{
 
+}
 .gallery-section{
     display: flex;
     flex-direction: row;
@@ -194,9 +196,9 @@ a:hover{
 .galleryImages{
 
     margin-top: 40px;
-    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
     margin-right: 10px;
-
     transition: 0.5s ease-in-out;
 
 }
@@ -204,16 +206,9 @@ a:hover{
     transform: scale(1.1);
     opacity: 80%;
 }
-.location-sections{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
 
-
-}
 .showMoreContainer.active{
+    padding:0px;
     display: none;
 
 }
@@ -415,5 +410,14 @@ h3{
     }
     .gallery-section{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .showMoreContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
 }
